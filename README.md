@@ -21,8 +21,14 @@ ping IP_OF_THE_ROBOT
 ping 192.168.131.40
 ``` 
 ## 3. Build on ROS
-
-
+In your catkin [workspace](http://wiki.ros.org/catkin/Tutorials/create_a_workspace): 
+``` 
+cd ~/catkin_ws/src
+git clone https://github.com/iseedwyane/universal_robot.git
+cd ..
+catkin_make
+``` 
+再导入py文件，编译后run
 ## 4. Run 
 ### 4.1 Run in Simulation [Gazebo](http://wiki.ros.org/ur_gazebo)
 #### way_1: 
