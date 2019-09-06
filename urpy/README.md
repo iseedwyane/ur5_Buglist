@@ -1,48 +1,46 @@
-ROS中编写Publisher和Subscriber的方法（Python版）  
 
-### !/usr/bin/env python
-### 每个python版本的ROS节点在开头都有这样一个声明，表示这个文件是python类型 
+# import
 ```
 import rospy, sys  
 ```
 [rospy](http://wiki.ros.org/rospy/Tutorials)
 如果要写ROS节点，需要导入rospy。 
-
 ```
 import moveit_commander  
 ```
-
 ```
 from control_msgs.msg import GripperCommand  
 ```
- 
 control_msgs.msg的目的是可以使用control_msgs/String消息类型来发布  
 
-
+# class
 ```
 class MoveItFkDemo:  
     def __init__(self):  
 ```
-初始化move_group的API  
+关于Python的类别(Class)Example:  
+(知识点)[如何理解python的类与对象？](https://www.zhihu.com/question/27699413)
 ```
-        moveit_commander.roscpp_initialize(sys.argv)  
+class Animal(): 
+def __init__(self, name): 
+  self.name = name 
+a = Animal("dog") #建立一个名叫dog的Animal实体(物件) 
+print(a.name)
 ```
-初始化ROS节点
+## [First initialize moveit_commander and rospy. ](http://docs.ros.org/indigo/api/pr2_moveit_tutorials/html/planning/scripts/doc/move_group_python_interface_tutorial.html)
 ```
-        rospy.init_node('moveit_fk_demo', anonymous=True)
+        moveit_commander.roscpp_initialize(sys.argv)   #初始化move_group的API 
+        rospy.init_node('moveit_fk_demo', anonymous=True)   #初始化ROS节点
  ```
  
-初始化需要使用move group控制的机械臂中的arm group
+[Initialize the move group for the ur5_arm]
 ```
-        arm = moveit_commander.MoveGroupCommander('manipulator')
+        arm = moveit_commander.MoveGroupCommander('manipulator') #初始化需要使用move group控制的机械臂中的arm group
+        #gripper = moveit_commander.MoveGroupCommander('endeffector')#初始化需要使用move group控制的机械臂中的gripper group
 ```        
-初始化需要使用move group控制的机械臂中的gripper group
+
 ```
-        #gripper = moveit_commander.MoveGroupCommander('endeffector')
-```        
-设置机械臂和夹爪的允许误差值
-```
-        arm.set_goal_joint_tolerance(0.001)
+        arm.set_goal_joint_tolerance(0.001) #设置机械臂和夹爪的允许误差值
         #gripper.set_goal_joint_tolerance(0.001)
 ```
          
@@ -62,6 +60,7 @@ class MoveItFkDemo:
         moveit_commander.roscpp_shutdown()
         moveit_commander.os._exit(0)
 ```
+
 ```
 if __name__ == "__main__":
     try:
