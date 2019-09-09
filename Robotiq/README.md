@@ -14,4 +14,5 @@ bash
 
 rosdep install robotiq_modbus_tcp
 ```
-[GJXS1980/Lab409_Robotiq](https://github.com/GJXS1980/Lab409_Robotiq)
+[GJXS1980/Lab409_Robotiq](https://github.com/GJXS1980/Lab409_Robotiq)  
+[search_robotiq](https://github.com/search?q=robotiq)
