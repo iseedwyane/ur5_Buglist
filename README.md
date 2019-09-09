@@ -30,7 +30,7 @@ git clone https://github.com/iseedwyane/universal_robot.git
 cd ..
 catkin_make
 ``` 
-再导入py文件，编译后run
+再导入py文件，编译后run  
 Note:[环境配置](http://wiki.ros.org/cn/kinetic/Installation/Ubuntu)
 ```
 $ echo "~/ur5_ws/devel/setup.bash" >> ~/.bashrc
