@@ -62,7 +62,13 @@ roslaunch ur5_moveit_config ur5_moveit_planning_execution.launch sim:=true limit
 ``` 
 ~/ur5_ws/src/ur5_pkgby13
 $ python moveit_fk_demo.py
-``` 
+```  
+Put these launch commander into test2.launch file in ur_gazebo package
+```
+roslaunch ur_gazebo test2.launch
+```
+is also ok.
+
 #### way_2: 
 也可以另外打开一个终端，打开可视化可交互的Rviz界面：  
 ``` 
