@@ -49,6 +49,16 @@ $ gedit .bashrc
 ```
 ## 4. Run 
 ### 4.1 Run in Simulation [Gazebo](http://wiki.ros.org/ur_gazebo)
+#### way_final
+1. 打开一个终端，启动Gazebo同时导入ur5的模型信息：
+``` 
+roslaunch ur_gazebo test2.launch simulation:=true
+```  
+2.运行
+``` 
+$ ~/ur5_ws/src/ur5_pkgby13
+$ python test_demo.py   &&  test_demo2.py   
+```  
 #### way_1: 
 1. 打开一个终端，启动Gazebo同时导入ur5的模型信息：
 ``` 
