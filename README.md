@@ -10,9 +10,16 @@
 Our package was developed in Ubuntu [16.04](http://releases.ubuntu.com/16.04/) and [ROS Kinetic](http://wiki.ros.org/cn/ROS/Tutorials/)[ROS Installtaion](http://wiki.ros.org/ROS/Installation).  
 [MoveIt!](http://docs.ros.org/kinetic/api/moveit_tutorials/html/index.html): ROS robot planning framework  
 [ur_modern_driver](https://github.com/ros-industrial/ur_modern_driver): ROS driver for UR10 robot controller from Universal Robots
+
+#### 安装MoveIt
+```
+sudo apt-get install ros-kinetic-moveit-*
+```
+
 ### 2.3 [Test TCP/IP](http://wiki.ros.org/universal_robot/Tutorials/Getting%20Started%20with%20a%20Universal%20Robot%20and%20ROS-Industrial)
 
-用PING命令测试通讯：  
+
+#### Run with real robot 用PING命令测试通讯：  
 ``` 
 ping IP_OF_THE_ROBOT
 ``` 
@@ -21,6 +28,7 @@ ping IP_OF_THE_ROBOT
 ping 192.168.131.40
 ``` 
 ## 3. Build on ROS
+
 In your catkin [workspace](http://wiki.ros.org/catkin/Tutorials/create_a_workspace): 
 ``` 
 $ mkdir -p ~/ur5_ws/src
