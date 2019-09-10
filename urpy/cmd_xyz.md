@@ -1,1 +1,1 @@
-[urx](https://github.com/SintefManufacturing/python-urxa)
+[urx](https://github.com/SintefManufacturing/python-urx)
