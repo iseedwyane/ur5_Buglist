@@ -41,6 +41,10 @@ catkin_make
 再导入py文件，编译后run  
 Note:[环境配置](http://wiki.ros.org/cn/kinetic/Installation/Ubuntu)
 ```
+
+echo "source ~/ur5_ws/devel/setup.bash" >> ~/.bashrc
+source ~/.zbarc
+---------------
 $ echo "~/ur5_ws/devel/setup.bash" >> ~/.bashrc
 $ gedit .bashrc
 have a look:
