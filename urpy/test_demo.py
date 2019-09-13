@@ -13,7 +13,7 @@ def talker_by13():
     arm.set_goal_joint_tolerance(0.001)
 
 
-    joint_positions = [1, -1.9, 1, 3.49,4.886, -2.128]
+    joint_positions = [1, -1.9, 1, 1.49,1.886, -2.128]
     #joint_positions = [0, 0, 0, 0,0, 0]
     arm.set_joint_value_target(joint_positions)
                  
