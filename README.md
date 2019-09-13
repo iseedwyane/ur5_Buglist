@@ -15,6 +15,12 @@ Our package was developed in Ubuntu [16.04](http://releases.ubuntu.com/16.04/) a
 ```
 sudo apt-get install ros-kinetic-moveit-*
 ```
+### 
+```
+sudo apt install ros-kinetic-ur-*
+sudo apt install ros-kinetic-ur5-moveit-config 
+
+```
 
 ### 2.3 [Test TCP/IP](http://wiki.ros.org/universal_robot/Tutorials/Getting%20Started%20with%20a%20Universal%20Robot%20and%20ROS-Industrial)
 
