@@ -58,6 +58,10 @@ $ gedit .bashrc
 $ sudo gedit .bashrc
 
 ```
+查看路径配置结果：
+```
+echo $ROS_PACKAGE_PATH 
+```
 ## 4. Run 
 ### 4.1 Run in Simulation [Gazebo](http://wiki.ros.org/ur_gazebo)
 #### way_final
