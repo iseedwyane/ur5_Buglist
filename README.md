@@ -52,9 +52,10 @@ echo "source ~/ur5_ws/devel/setup.bash" >> ~/.bashrc
 source ~/.zbarc
 ---------------
 $ echo "~/ur5_ws/devel/setup.bash" >> ~/.bashrc
-$ gedit .bashrc
+$ source .bashrc 
 have a look:
 $ gedit .bashrc
+$ sudo gedit .bashrc
 
 ```
 ## 4. Run 
