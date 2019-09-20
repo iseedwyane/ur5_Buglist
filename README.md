@@ -67,12 +67,14 @@ echo $ROS_PACKAGE_PATH
 #### way_final
 1. 打开一个终端，启动Gazebo同时导入ur5的模型信息：
 ``` 
+PC:$ roslaunch ur_gazebo test.launch simulation:=true
 roslaunch ur_gazebo test2.launch simulation:=true
 ```  
 2.运行
 ``` 
-$ ~/ur5_ws/src/ur5_pkgby13
+$ ~/ur5_ws/script
 $ python test_demo.py   &&  test_demo2.py   
+python cartesian3_succ.py
 ```  
 #### way_1: 
 1. 打开一个终端，启动Gazebo同时导入ur5的模型信息：
