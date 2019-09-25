@@ -23,7 +23,8 @@ sudo apt install ros-kinetic-ur5-moveit-config
 ```
 
 ### 2.3 [Test TCP/IP](http://wiki.ros.org/universal_robot/Tutorials/Getting%20Started%20with%20a%20Universal%20Robot%20and%20ROS-Industrial)
-
+[Set PC_ip](https://github.com/GJXS1980/Lab409_RUR/blob/master/%E7%A7%BB%E5%8A%A8%E5%B9%B3%E5%8F%B0%E4%BD%BF%E7%94%A8%E6%95%99%E7%A8%8BV3.0.md)
+ 
 
 #### Run with real robot 用PING命令测试通讯：  
 ``` 
