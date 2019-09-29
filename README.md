@@ -64,6 +64,24 @@ $ sudo gedit .bashrc
 echo $ROS_PACKAGE_PATH 
 ```
 ## 4. Run 
+### 4.0.1Run in Gazebo and Rviz:
+```
+$ roslaunch ur_gazebo test2.launch simulation:=true
+
+```
+### 4.0.2 Run aruco_realsense
+```
+$ roslaunch aruco_ros single_realsense.launch
+```
+```
+rqt_image_view 
+rostopic echo /aruco_single/pose
+```
+### 4.0.3 Run tf
+```
+roslaunch learning_tf tf_demo.launch
+```
+
 ### 4.1 Run in Simulation [Gazebo](http://wiki.ros.org/ur_gazebo)
 #### way_final
 1. 打开一个终端，启动Gazebo同时导入ur5的模型信息：
