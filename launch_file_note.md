@@ -72,7 +72,8 @@ launch常用标签tag：
 
 <param>：设置变量到参数服务器,参数服务器的概念看ros wiki
 
-<rosparam>: dump/load、delete parameters from/to  Parameter Server,常用来加载程序的参数配置文件到参数服务器，然后程序从参数服务器取得参数值；
+<rosparam>: dump/load、delete parameters from/to  Parameter Server,
+  常用来加载程序的参数配置文件到参数服务器，然后程序从参数服务器取得参数值；
 
 <remap>:名称映射 from:被映射名称 to:目标名称,名称映射的概念看ros wiki
 
@@ -105,7 +106,11 @@ launch常用标签tag：
 
             </launch>
 
-      上面是.launch文件的最小例子。.launch文件开头是以<launch>​为标签，让我们知道这是一个.launch文件，以</launch>为结尾。而中间就是写自己要启动的节点，是以<node> 开始，</node>结束，其中pkg="rospy_tutorials"，这是自己要启动的节点所在的包；type="talker"，这是自己写的节点.cpp程序通过编译生产的可执行文件的名字，你最初编译.cpp程序的时候要在CMakeLists.txt添加cpp程序编译的设置，这个可执行文件的名字在CMakeLists.txt中就可以找到；name="talker"，这是节点的名字。
+      上面是.launch文件的最小例子。.launch文件开头是以<launch>​为标签，让我们知道这是一个.launch文件，
+      以</launch>为结尾。
+      而中间就是写自己要启动的节点，是以<node> 开始，</node>结束，其中pkg="rospy_tutorials"，这是自己要启动的节点所在的包；
+      type="talker"，这是自己写的节点.cpp程序通过编译生产的可执行文件的名字，你最初编译.cpp程序的时候要在CMakeLists.txt添
+      加cpp程序编译的设置，这个可执行文件的名字在CMakeLists.txt中就可以找到；name="talker"，这是节点的名字。
 
 2.Roslaunch /XML/remap     ​
 
@@ -184,7 +189,7 @@ launch文件的一般格式，参数：
     textfile=''$(find pkg-name)/path/file''(可选)   
 
     binfile=''$(find pkg-name)/path/file''()
-    command=''(find pkg-name)/exe '$(find pkg-name)/arg.txt' ''(可选)exe是可执行文件（cpp、py），arg.txt是参        数文件
+    command=''(find pkg-name)/exe '$(find pkg-name)/arg.txt' ''(可选)exe是可执行文件（cpp、py），arg.txt是参数文件
 <include>在当前launch文件中调用另一个launch文件
     file=''$(find pkg-name)/path/launch-file.launch''    
 <env>设置节点的环境变量
