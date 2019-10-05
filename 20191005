@@ -1,0 +1,36 @@
+目的：连上ur5，运行：
+```
+roslaunch ur_modern_driver ur5_bringup.launch robot_ip:=192.168.131.40 [reverse_port:=REVERSE_PORT]
+roslaunch ur5_moveit_config ur5_moveit_planning_execution.launch
+```
+看rviz能不能实时显示ur5位置和姿态。
+
+set ip 
+test:
+```
+ping 192.168.131.40
+ifconfig 
+
+```
+```
+roslaunch ur_modern_driver ur5_bringup.launch robot_ip:=192.168.131.40 [reverse_port:=REVERSE_PORT]
+or
+roslaunch ur_modern_driver ur5_bringup.launch robot_ip:=192.168.131.40
+
+```
+get:
+```
+process[ur_driver-3]: started with pid [10256]
+[ INFO] [1570266885.895766825]: Setting up connection: 192.168.131.40:30003
+[ERROR] [1570266885.895829345]: Connection setup failed for 192.168.131.40:30003
+[ INFO] [1570266885.895840018]: Setting up connection: 192.168.131.40:30001
+[ERROR] [1570266885.895860119]: Connection setup failed for 192.168.131.40:30001
+[ WARN] [1570266885.895871402]: Failed to read from stream, reconnecting in 1 seconds...
+[ INFO] [1570266886.896076731]: Setting up connection: 192.168.131.40:30001
+[ERROR] [1570266886.896251462]: Connection setup failed for 192.168.131.40:30001
+[ WARN] [1570266886.896308646]: Failed to read from stream, reconnecting in 2 seconds...
+[ INFO] [1570266888.896707938]: Setting up connection: 192.168.131.40:30001
+[ERROR] [1570266888.896881754]: Connection setup failed for 192.168.131.40:30001
+[ WARN] [1570266888.896919991]: Failed to read from stream, reconnecting in 4 seconds...
+```
+[search result](https://answers.ros.org/question/324950/ur3-connection-setup-failed-ur_modern_driver/)
