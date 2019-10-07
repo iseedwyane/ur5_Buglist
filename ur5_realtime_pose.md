@@ -1,5 +1,5 @@
 
-#test ip
+# test ip
 my PC_ip=192.168.131.39
 # enable the ur5
 initialize ur5 on controller 
