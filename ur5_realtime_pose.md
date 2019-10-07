@@ -21,3 +21,6 @@ roslaunch ur5_moveit_config moveit_rviz.launch config:=true
 ```
  roslaunch learning_tf tf_demo.launch
 ```
+
+
+![End-effector](https://github.com/iseedwyane/ur5/blob/master/pic/ee2.png)
