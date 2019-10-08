@@ -14,8 +14,8 @@ const Eigen::Affine3d & 	getCollisionBodyTransform (const std::string &link_name
 # SEARCH
 [MOVEIT: Compute forward kinematics and plan in Cartesian space](https://answers.ros.org/question/274093/moveit-compute-forward-kinematics-and-plan-in-cartesian-space/)
 
-
-
+[Robot Model and Robot State](http://docs.ros.org/kinetic/api/moveit_tutorials/html/doc/robot_model_and_robot_state/robot_model_and_robot_state_tutorial.html)
+[MoveIt! 中的运动学模型](https://blog.csdn.net/wxflamy/article/details/79195085)
 
 
 
