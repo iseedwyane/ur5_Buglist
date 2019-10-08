@@ -10,6 +10,9 @@ CST（中国标准时间）
 要切换回 UTC 时区，只需运行：
 ```
 $ sudo timedatectl set-timezone UTC
+
+sudo timedatectl set-timezone Asia/Hong_Kong
+
 ```
 在较旧的 Ubuntu 版本中，没有 timedatectl 命令。这种情况下，可以使用 tzdata（Time zone data）来设置时间同步。
 ```
