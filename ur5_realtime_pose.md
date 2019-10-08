@@ -39,6 +39,6 @@ rostopic echo /aruco_single/pose
 ```
 rqt_graph
 rostopic echo /tf_static
-
+rosrun tf view_frames 
 ```
 ![base2end2cam2aruco](https://github.com/iseedwyane/ur5/blob/master/pic/2019-10-07%20suc3.png)
