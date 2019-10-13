@@ -1,6 +1,6 @@
 way1:moveit
 # Input:/joint_state
-Q1:How to input data:/joint_state
+Q1:How to input data:/joint_state  
 Q2:How to input model of ur5
 # Output：robot kinematics
 把joint state 的数据用这个函数转为robot kinematics的xyz和q
