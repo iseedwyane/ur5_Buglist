@@ -12,8 +12,8 @@ source ~/A/src/xxx1/devel/setup.bash
 source ~/B/src/xxx2/setup.bash
 source ~/new/src/xxx3/devel/setup.bash
 ```
-即：新添加的在后面。
-或者直接用命令行添加，
+即：新添加的在后面。  
+或者直接用命令行添加：
 ```
 echo 'source ~/ws_moveit/devel/setup.bash' >> ~/.bashrc
 ```
