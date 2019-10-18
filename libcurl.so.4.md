@@ -1,4 +1,9 @@
-
+之前装了anaconda
+打开命令行，并进行测试
+```
+conda list
+```
+后来编译包出现问题：
 
 ```
 ssen@sen-inspiron-15-7000-gaming:~/moveit_ws$ catkin build
@@ -82,11 +87,28 @@ Failed    <<< moveit_tutorials                     [ 28.9 seconds ]
 ```
 locale libcurl.so.4
 ```
-得到：
+I try to upgrade cmake and curl:
 ```
-ssen@sen-inspiron-15-7000-gaming:~$ locale libcurl.so.4
-locale: 不明名称 “libcurl.so.4”
+conda upgrade curl
+conda upgrade cmake
 ```
+but cannnot work
+Then,I try 
+```
+conda remove curl 
+```
+because it compile against the system curl.
+编译but cannot work.
 
+curl --version
 
+# cmake -version
+ssen@sen-inspiron-15-7000-gaming:~$ cmake -version
+cmake: /usr/local/curl/lib/libcurl.so.4: no version information available (required by cmake)
+cmake version 3.5.1
 
+CMake suite maintained and supported by Kitware (kitware.com/cmake).
+ssen@sen-inspiron-15-7000-gaming:~$ 
+
+# error: curl: /usr/local/lib/libcurl.so.4: no version information available (required by curl)
+[solution_link](https://stackoverflow.com/questions/30017397/error-curl-usr-local-lib-libcurl-so-4-no-version-information-available-requ)
