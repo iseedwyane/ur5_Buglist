@@ -38,7 +38,7 @@ ping 192.168.131.40
 
 In your catkin [workspace](http://wiki.ros.org/catkin/Tutorials/create_a_workspace): 
 ``` 
-$ mkdir -p ~/ur5_ws/src
+$ mkdir -p ur5_ws/src
 
 cd ~/ur5_ws/src
 git clone https://github.com/iseedwyane/universal_robot.git
